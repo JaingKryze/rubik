@@ -1,4 +1,4 @@
-cube.style.webkitTransform = 
+cube.style.transform = 
 "rotateX(" + x + "deg) rotateY(" + y + "deg)";
 
 //test
