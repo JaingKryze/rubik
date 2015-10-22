@@ -1,7 +1,8 @@
-cube.style.webkitTransform = 
+cube.style.transform = 
 "rotateX(" + x + "deg) rotateY(" + y + "deg)";
 
 //test
+//Home Commit by Justin Herrera
 
 var Side = function(c1, c2, c3, c4, c5, c6, c7, c8, c9){
     this.appendEdge(co1, co2, co3, p1, p2, p3)

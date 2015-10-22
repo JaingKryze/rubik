@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <!--test-->
+=======
+<!--test124124545 -->
+>>>>>>> origin/master
 <html>
 <head>
     <link rel="stylesheet" href="stylesheet.css">
@@ -104,32 +108,22 @@
     </div>
     <section id="control">
         <p><input type="button" value="Flip Orientation" id="flipOrientation" onClick="rotate(180, 0)"></p>
-<!--
-    <p>X: <input id="rx" type="range" max="360" min="0" value="0" onchange="rotate()"></p>
-    <p>Y: <input id="ry" type="range" max="360" min="0" value="130" onchange="rotate()"></p>
-    <p>Plane: <input id="plane" type="checkbox" onclick="showPlane(this)"></p>
--->
+
+
     <script>
-//     document.querySelector('#cube').addEventListener("mousemove", mouseOver, false);
-//       function mouseOver(e){
-//        var y = -e.pageX*.5,
-//            x = -e.pageY*.5;
-//        rotate(x,y);
-//        }
+
         var x=-30;
         var y=-45;
         function showPlane(c){
             document.querySelector('#cube').style.background = c.checked ? '#CCC': '';
         }
         function rotate(newX,newY){
-//            var x = parseInt(document.querySelector('#rx').value,10) + (newX || 0),
-//                y = parseInt(document.querySelector('#ry').value,10) + (newY || 0),
             var cube = document.getElementById('cube');
             x+=newX;
             y+=newY;
-            cube.style.webkitTransform = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-            cube.style.MozTransform = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-            //cube.style.transform = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+            cube.style.transform = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+
+
         }
     </script>
 </section>
