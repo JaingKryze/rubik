@@ -3,6 +3,7 @@
 
 //test
 //uf
+
 function Edge(st1, st2, st3)
     {
     this.st1 = st1;
@@ -12,12 +13,41 @@ function Edge(st1, st2, st3)
 var edg = new Edge("k", "", "");
 
 function Side(c1, c2, c3, c4, c5, c6, c7, c8, c9){
-    //this.appendEdge = new function(edg , p1, p2, p3)
-    //    {
-    //    this[("c" + p1)] = edg.st1;
-    //    this[("c" + p2)] = edg.st2;
-    //    this[("c" + p3)] = edg.st3;
-    //    };
+    this.getKeyByValue = function(value)
+        {
+        for( var prop in this ) {
+            if( this.hasOwnProperty( prop ) ) {
+                    if( this[ prop ] === value )
+                        return prop;
+                }
+            }
+        }
+    this.appendEdge = function(edg , p1, p2, p3)
+        {
+        var i = 1;
+        var a;
+        var b;
+        var c;
+        for(var key in this)
+        {
+            if(p1 == i)
+            {
+                a = this.getKeyByValue(key);
+            }
+            if(p2 == i)
+            {
+                b = this.getKeyByValue(key);
+            }
+            if(p3 == i)
+            {
+                c = this.getKeyByValue(key);
+            }
+        }
+            console.log(edg.st1);
+        this[a] = edg.st1;
+        this[b] = edg.st2;
+        this[c] = edg.st3;
+        };
     this.getEdge = function(num1, num2, num3)
         {
         var i = 1;
@@ -34,7 +64,7 @@ function Side(c1, c2, c3, c4, c5, c6, c7, c8, c9){
                 {
                 b = key;
                 }
-            if(num1 == i)
+            if(num3 == i)
                 {
                 c = key;
                 }
@@ -55,7 +85,6 @@ function Side(c1, c2, c3, c4, c5, c6, c7, c8, c9){
 
 this.setAll = function(clr)
     {
-    console.log(clr);
         for(var key in this)
         {
             this[key] = clr;
@@ -72,6 +101,5 @@ this.setAll = function(clr)
     this.c9 = c9;
 };
 
-var side1 = new Side("b", "a", "b", "a", "b", "a", "b", "a", "b");
-side1.setAll("blue");
-console.log(side1.c7);
+var side1 = new Side("a", "b", "c", "d", "e", "f", "g", "h", "i");
+side1.appendEdge((side1.getEdge(1, 2, 3)));
