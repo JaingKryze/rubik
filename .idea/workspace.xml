@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05b442ea-6410-4f7f-a6e2-273c0424dffc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rubik.js" afterPath="$PROJECT_DIR$/rubik.js" />
+    <list default="true" id="05b442ea-6410-4f7f-a6e2-273c0424dffc" name="Default" comment=" updateCube()  2">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rubik.iws" />
@@ -39,11 +38,9 @@
       <file leaf-file-name="rubik.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rubik.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9580247">
-              <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -329,7 +326,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445625601488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=" updateCube()  2">
+      <created>1445626857336</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1445626857337</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -370,7 +373,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed merge issue" />
     <MESSAGE value="updateCube()" />
-    <option name="LAST_COMMIT_MESSAGE" value="updateCube()" />
+    <MESSAGE value=" updateCube()  2" />
+    <option name="LAST_COMMIT_MESSAGE" value=" updateCube()  2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -391,9 +395,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -425,11 +427,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rubik.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9580247">
-          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
