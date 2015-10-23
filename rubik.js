@@ -13,7 +13,7 @@ function Edge(st1, st2, st3)
 var edg = new Edge("k", "", "");
 
 function Side(c1, c2, c3, c4, c5, c6, c7, c8, c9){
-    this.getKeyByValue = new function(value)
+    this.getKeyByValue = function(value)
         {
         for( var prop in this ) {
             if( this.hasOwnProperty( prop ) ) {
@@ -22,7 +22,7 @@ function Side(c1, c2, c3, c4, c5, c6, c7, c8, c9){
                 }
             }
         }
-    this.appendEdge = new function(edg , p1, p2, p3)
+    this.appendEdge = function(edg , p1, p2, p3)
         {
         var i = 1;
         var a;
@@ -43,9 +43,10 @@ function Side(c1, c2, c3, c4, c5, c6, c7, c8, c9){
                 c = this.getKeyByValue(key);
             }
         }
-        this[a] = edg;
-        this[b] = edg;
-        this[c] = edg;
+            console.log(edg.st1);
+        this[a] = edg.st1;
+        this[b] = edg.st2;
+        this[c] = edg.st3;
         };
     this.getEdge = function(num1, num2, num3)
         {
@@ -84,7 +85,6 @@ function Side(c1, c2, c3, c4, c5, c6, c7, c8, c9){
 
 this.setAll = function(clr)
     {
-    console.log(clr);
         for(var key in this)
         {
             this[key] = clr;
@@ -101,6 +101,5 @@ this.setAll = function(clr)
     this.c9 = c9;
 };
 
-var side1 = new Side("b", "a", "b", "a", "b", "a", "b", "a", "b");
-side1.setAll("blue");
-console.log(side1.c7);
+var side1 = new Side("a", "b", "c", "d", "e", "f", "g", "h", "i");
+side1.appendEdge((side1.getEdge(1, 2, 3)));
