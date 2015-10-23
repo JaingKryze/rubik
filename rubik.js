@@ -101,7 +101,10 @@ this.setAll = function(clr)
     this.c9 = c9;
 };
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 25b56eb88582a4ef002be06241c92dcfb58777a5
 var side1 = new Side("a", "b", "c", "d", "e", "f", "g", "h", "i");
 side1.appendEdge((side1.getEdge(1, 2, 3)));
 
