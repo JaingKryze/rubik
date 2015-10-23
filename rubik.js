@@ -40,19 +40,10 @@ var Side = function(c1, c2, c3, c4, c5, c6, c7, c8, c9){
         return {this.c1, this.c2, this.c3, this.c4, this.c5, this.c6, this.c7, this.c8, this.c9};
         };
 };
-var side1 = new Side();
-side1.setAll("blue");
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 25b56eb88582a4ef002be06241c92dcfb58777a5
 var side1 = new Side("a", "b", "c", "d", "e", "f", "g", "h", "i");
 side1.appendEdge((side1.getEdge(1, 2, 3)));
-=======
->>>>>>> origin/master
+
 
 function updateCube()
     {
@@ -106,18 +97,6 @@ function updateCube()
         document.getElementsByClassName(".lbc").style.color = left.c8;
         document.getElementsByClassName(".lbl").style.color = left.c9;
 
-<<<<<<< HEAD
-    document.getElementsByClassName(".btl").style.color = back.c1;
-    document.getElementsByClassName(".btc").style.color = back.c2;
-    document.getElementsByClassName(".btr").style.color = back.c3;
-    document.getElementsByClassName(".bcl").style.color = back.c4;
-    document.getElementsByClassName(".bcc").style.color = back.c5;
-    document.getElementsByClassName(".bcr").style.color = back.c6;
-    document.getElementsByClassName(".bbr").style.color = back.c7;
-    document.getElementsByClassName(".bbc").style.color = back.c8;
-    document.getElementsByClassName(".bbl").style.color = back.c9;
-}
-=======
         document.getElementsByClassName(".btl").style.color = back.c1;
         document.getElementsByClassName(".btc").style.color = back.c2;
         document.getElementsByClassName(".btr").style.color = back.c3;
@@ -128,4 +107,4 @@ function updateCube()
         document.getElementsByClassName(".bbc").style.color = back.c8;
         document.getElementsByClassName(".bbl").style.color = back.c9;
     }
->>>>>>> origin/master
+
