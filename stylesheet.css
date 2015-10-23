@@ -44,6 +44,7 @@
 /* CUBIES POSITIONS*/
 
 /*UP FACE CUBIES*/
+/*blue*/
 .utl {
      transform:rotateX(90deg) translate3d(50px,-100px, 0px);
     background-color: blue;
@@ -82,6 +83,7 @@
 }
 
 /*FRONT FACE CUBIES*/
+/*white*/
 .ftl {
     background-color: white;
      transform:translate3d(50px,50px,150px);
@@ -121,6 +123,7 @@ background-color: white;
 }
 
 /*DOWN FACE CUBIES*/
+/*green*/
 .dtl {
     background-color: green;
      transform:rotateX(-90deg) translate3d(50px,-100px,300px);
